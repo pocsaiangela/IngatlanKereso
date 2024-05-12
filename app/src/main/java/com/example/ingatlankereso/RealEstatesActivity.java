@@ -5,7 +5,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,6 +61,22 @@ public class RealEstatesActivity extends AppCompatActivity {
         mEstate = mFirestore.collection("Estates");
 
         queryData();
+
+        SearchView searchBar = findViewById(R.id.search_bar);
+        searchBar.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                Log.d(LOG_TAG, s);
+                mAdapter.getFilter().filter(s);
+                return false;
+            }
+        });
     }
 
     @Override
@@ -69,6 +87,7 @@ public class RealEstatesActivity extends AppCompatActivity {
     private void queryData() {
         //létező adatok törlése hogy ne legyen ismétlés
         mEstateList.clear();
+        //Firebase-ból ingatlanok lekérdezése
         mEstate.get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {

@@ -83,7 +83,7 @@ public class RealEstateAdapter extends RecyclerView.Adapter<com.example.ingatlan
                 results.values = filteredList;
             }
 
-            return null;
+            return results;
         }
 
         @Override

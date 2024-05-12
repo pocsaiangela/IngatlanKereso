@@ -24,36 +24,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-            <com.google.android.material.textfield.TextInputLayout
+            <SearchView
+                android:id="@+id/search_bar"
+                android:background="@color/primary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
 
-                android:textColorHint="@color/black"
-                android:foregroundTint="@color/black"
-                app:boxStrokeColor="@color/black"
-                app:helperTextTextColor="@color/black"
-                app:placeholderTextColor="@color/black"
-                app:hintTextColor="@color/black"
-                app:cursorColor="@color/black"
-
-                app:boxBackgroundColor="@color/primary"
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/search_bar"
-                    android:inputType="text"
-                    android:layout_width="match_parent"
-                    android:layout_height="53dp"
-                    android:layout_marginBottom="35dp"
-                    android:hint="@string/addressSearchHint"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/primary"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
+                android:backgroundTint="#a0a0a0"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="30dp"
+                />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
