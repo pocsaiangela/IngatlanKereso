@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">IngatlanKereso</string>
+    <string name="password">Jelszó</string>
+    <string name="passwordConfirmation">Jelszó megerősítés</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="welcome">Hello </string>
+    <string name="registry">Regisztráció</string>
+    <string name="email">Email</string>
+    <string name="last_name">Vezetéknév</string>
+    <string name="first_name">Keresztnév</string>
+    <string name="login_google">Bejelentkezés Google fiókkal</string>
+    <string name="estate_address">Cím</string>
+    <string name="estate_price">Ár</string>
+    <string name="estate_room_num">Szobák</string>
+    <string name="estate_area">Alapterület</string>
+    <string name="estateDescription">Leírás</string>
+    <string name="sellerContact">Eladó elérhetősége</string>
+    <string name="addEstateFABDesc">Új ingatlan hozzáadása</string>
+    <string name="addressSearchHint">Cím keresése</string>
+</resources>
+
+

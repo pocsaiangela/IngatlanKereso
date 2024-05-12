@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "715708576180",
+    "project_id": "androidrealestate-50f03",
+    "storage_bucket": "androidrealestate-50f03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715708576180:android:0a8898d01f2f90533f02e1",
+        "android_client_info": {
+          "package_name": "com.example.ingatlankereso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715708576180-b1s5sd27hq5320tmvb2dn8kkcrqecjkv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ingatlankereso",
+            "certificate_hash": "c7167250f8e17e58dba9f099cc9f3b3d73566e23"
+          }
+        },
+        {
+          "client_id": "715708576180-pvr18gbgr4vnhem7poagj92vkpou1fru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQWYXJHWL4J359PFbpfuOA8xMJh3ycnGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715708576180-pvr18gbgr4vnhem7poagj92vkpou1fru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
